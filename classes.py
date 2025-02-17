@@ -20,7 +20,7 @@ employees = {}
 
 @app.route('/')
 def home():
-    return render_template('home.html')
+    return """<h2>HOME PAGE Click <a href="/add_employee" target="_blank">here</a> to add employee"""
 
 @app.route('/add_employee', methods=['GET', 'POST'])
 def add_employee():
